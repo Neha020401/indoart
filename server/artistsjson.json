@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "Emma Johnson",
+        "image": "https://placekitten.com/300/300",
+        "shortBio": "Abstract artist with a passion for bold colors and geometric shapes.",
+        "fullBio": "Emma Johnson is a renowned abstract artist known for her vibrant use of color and intricate geometric compositions. With over 15 years of experience, her work has been featured in galleries across Europe and North America.",
+        "category": "Abstract",
+        "rating": 4.8,
+        "totalSold": 127,
+        "joinDate": "2015-03-15",
+        "featuredWorks": [
+            {
+                "id": 1,
+                "title": "Geometric Harmony",
+                "image": "https://placekitten.com/200/200"
+            },
+            {
+                "id": 2,
+                "title": "Color Explosion",
+                "image": "https://placekitten.com/201/201"
+            },
+            {
+                "id": 3,
+                "title": "Abstract Landscape",
+                "image": "https://placekitten.com/202/202"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Liam Miller",
+        "image": "https://placekitten.com/301/301",
+        "shortBio": "Modern sculptor specializing in minimalistic designs.",
+        "fullBio": "Liam Miller's sculptures are a unique blend of simplicity and elegance, emphasizing clean lines and geometric shapes. His work has been displayed in both local and international museums, with a focus on promoting contemporary art.",
+        "category": "Sculpture",
+        "rating": 4.6,
+        "totalSold": 92,
+        "joinDate": "2018-07-22",
+        "featuredWorks": [
+            {
+                "id": 1,
+                "title": "The Silent Wave",
+                "image": "https://placekitten.com/203/203"
+            },
+            {
+                "id": 2,
+                "title": "Urban Geometry",
+                "image": "https://placekitten.com/204/204"
+            },
+            {
+                "id": 3,
+                "title": "Echoes of Silence",
+                "image": "https://placekitten.com/205/205"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Olivia Brown",
+        "image": "https://placekitten.com/302/302",
+        "shortBio": "Watercolor artist known for her serene and tranquil nature scenes.",
+        "fullBio": "Olivia Brown's work captures the natural world in delicate, flowing watercolor techniques. Her work evokes peace and tranquility, and she has been an active part of the art community for over 10 years.",
+        "category": "Watercolor",
+        "rating": 4.9,
+        "totalSold": 150,
+        "joinDate": "2016-09-01",
+        "featuredWorks": [
+            {
+                "id": 1,
+                "title": "Morning Dew",
+                "image": "https://placekitten.com/206/206"
+            },
+            {
+                "id": 2,
+                "title": "Calm Waters",
+                "image": "https://placekitten.com/207/207"
+            },
+            {
+                "id": 3,
+                "title": "Autumn Breeze",
+                "image": "https://placekitten.com/208/208"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Ethan Carter",
+        "image": "https://placekitten.com/303/303",
+        "shortBio": "Photographer with a focus on urban landscapes and architecture.",
+        "fullBio": "Ethan Carter is a seasoned photographer whose work explores the interaction between nature and urban environments. His photographs are known for their striking contrasts and stunning compositions.",
+        "category": "Photography",
+        "rating": 4.7,
+        "totalSold": 110,
+        "joinDate": "2017-04-10",
+        "featuredWorks": [
+            {
+                "id": 1,
+                "title": "City Lights",
+                "image": "https://placekitten.com/209/209"
+            },
+            {
+                "id": 2,
+                "title": "Steel and Stone",
+                "image": "https://placekitten.com/210/210"
+            },
+            {
+                "id": 3,
+                "title": "Sunset Over Cityscape",
+                "image": "https://placekitten.com/211/211"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Sophia Davis",
+        "image": "https://placekitten.com/304/304",
+        "shortBio": "Graphic designer with a passion for digital art and illustration.",
+        "fullBio": "Sophia Davis is an emerging graphic designer whose digital artwork blends traditional illustration techniques with modern graphic design principles. Her work is known for its bold use of color and visual storytelling.",
+        "category": "Digital Art",
+        "rating": 4.4,
+        "totalSold": 75,
+        "joinDate": "2020-01-25",
+        "featuredWorks": [
+            {
+                "id": 1,
+                "title": "Bold Beginnings",
+                "image": "https://placekitten.com/212/212"
+            },
+            {
+                "id": 2,
+                "title": "Colorful Chaos",
+                "image": "https://placekitten.com/213/213"
+            },
+            {
+                "id": 3,
+                "title": "Techno Vibes",
+                "image": "https://placekitten.com/214/214"
+            }
+        ]
+    }
+]

@@ -1,0 +1,503 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5; /* Soft light gray for the body */
+  color: #2c3e50; /* Dark blue-gray for body text */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Container for the artwork detail page */
+.artwork-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Back button */
+.back-button {
+  background-color: #2980b9; /* Blue for back button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #3498db; /* Slightly lighter blue on hover */
+}
+
+.back-button svg {
+  margin-right: 8px;
+}
+
+/* Artwork Detail Section */
+.artwork-detail-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side (image) */
+.artwork-image-container {
+  flex-basis: 45%;
+  margin-right: 30px;
+}
+
+.artwork-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side (details) */
+.artwork-info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Artwork title and artist name */
+.artwork-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1abc9c; /* Teal for the title for a pop of color */
+  margin-bottom: 15px;
+}
+
+.artist-name {
+  font-size: 18px;
+  color: #34495e; /* Dark gray-blue for artist name */
+  margin-bottom: 15px;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #e67e22; /* Orange for artist's link */
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+  color: #d35400; /* Darker orange on hover */
+}
+
+/* Artwork Meta (Price, Rating, Reviews) */
+.artwork-meta {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork-price {
+  font-size: 28px;
+  color: #2fad08; /* Coral red for price */
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.artwork-original-price {
+  font-size: 22px;
+  color: #95a5a6; /* Light gray for the original price */
+  text-decoration: line-through;
+}
+
+.artwork-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star {
+  color: #f39c12; /* Gold for stars */
+  margin-right: 3px;
+}
+
+.artwork-description {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: #7f8c8d; /* Soft gray for the description */
+}
+
+/* Framing Options */
+.framing-options {
+  margin-bottom: 25px;
+}
+
+.frame-select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #fff;
+  color: #34495e; /* Dark gray text for dropdown */
+}
+
+/* Quantity Selector */
+.quantity-selector {
+  margin-bottom: 25px;
+}
+
+.quantity-input {
+  padding: 12px;
+  font-size: 16px;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Shipping Info */
+.shipping-info {
+  margin-bottom: 25px;
+}
+
+.shipping-info p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #34495e;
+}
+
+.shipping-info svg {
+  margin-right: 10px;
+}
+
+/* Return Policy */
+.return-policy {
+  margin-bottom: 25px;
+}
+
+.return-policy ul {
+  list-style-type: none;
+}
+
+.return-policy li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.return-policy li svg {
+  margin-right: 10px;
+}
+
+/* Artwork Actions (Add to Cart, Wishlist) */
+.artwork-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 15px; /* Space between the buttons */
+  width: 100%;
+}
+
+/* Seller Profile Section */
+.seller-profile {
+  background-color: white;
+  padding: 30px;
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.seller-profile h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.seller-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.seller-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.seller-details h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.seller-details p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.artist-bio {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #7f8c8d;
+  margin-bottom: 25px;
+}
+
+.view-profile-btn {
+  background-color: #16a085; /* Teal for profile button */
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.view-profile-btn:hover {
+  background-color: #1abc9c; /* Brighter teal on hover */
+}
+
+/* Container for action buttons */
+.artw-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Common button styles */
+.artw-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Add to Cart button */
+.artw-add-to-cart {
+  background-color: #007bff; /* Blue */
+  border-color: #007bff;
+  color: white;
+}
+
+.artw-add-to-cart:hover {
+  background-color: #0056b3; /* Darker blue */
+  border-color: #0056b3;
+}
+
+.artw-add-to-cart svg {
+  margin-right: 8px;
+}
+
+/* Add to Wishlist button */
+.artw-add-to-wishlist {
+  background-color: #ff6f61; /* Coral */
+  border-color: #ff6f61;
+  color: white;
+}
+
+.artw-add-to-wishlist:hover {
+  background-color: #d45d4a; /* Darker coral */
+  border-color: #d45d4a;
+}
+
+.artw-add-to-wishlist svg {
+  margin-right: 8px;
+}
+
+/* Responsive behavior for mobile */
+@media (max-width: 768px) {
+  .artw-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .artw-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .artw-actions button:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Container for About the Artist section */
+.artw-artist-info {
+  padding: 50px 30px;
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.artw-artist-info h2 {
+  font-size: 2.2rem;
+  color: #2c3e50; /* Dark Blue */
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Seller information container */
+.artw-seller-info {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 35px;
+  border-bottom: 2px solid #ecf0f1; /* Light gray border */
+  padding-bottom: 25px;
+}
+
+/* Seller image styling */
+.artw-seller-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ecf0f1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artw-seller-image:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Slight zoom & shadow on hover */
+}
+
+/* Seller details container */
+.artw-seller-details {
+  flex-grow: 1;
+}
+
+/* Artist name */
+.artw-artist-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+/* Ratings, Sales, and Join Date styling */
+.artw-seller-details p {
+  font-size: 1.1rem;
+  color: #7f8c8d; /* Soft gray for secondary text */
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.artw-seller-details p svg {
+  margin-right: 10px;
+  font-size: 1.25rem;
+}
+
+/* Rating (star icon) color */
+.artw-seller-details .fa-star {
+  color: #f39c12; /* Gold */
+}
+
+/* Button to view full profile */
+.artw-view-profile-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #2980b9; /* Primary Blue */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.artw-view-profile-btn:hover {
+  background-color: #1c5984; /* Darker blue on hover */
+}
+
+/* Artist bio styling */
+.artw-artist-bio {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.7;
+  margin-top: 20px;
+  text-align: justify;
+  padding-bottom: 35px;
+}
+
+/* Responsive behavior for small screens */
+@media (max-width: 768px) {
+  .artw-seller-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artw-seller-image {
+    margin-bottom: 20px;
+  }
+
+  .artw-seller-details {
+    text-align: center;
+  }
+
+  .artw-view-profile-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.artw-chat-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.artw-chat-btn:hover {
+  background-color: #128c7e;
+}
+
+.artw-chat-btn svg {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .artw-chat-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+

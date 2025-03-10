@@ -1,0 +1,139 @@
+/* Color Variables */
+:root {
+  --primary-bg-color: #0f1a2b; /* Deep Navy Blue */
+  --secondary-bg-color: #1d2831; /* Dark Slate Gray */
+  --accent-color: #ffb81c; /* Gold (for accents) */
+  --highlight-color: #8a2be2; /* Purple */
+  --text-light-color: #f1f1f1; /* Light Gray */
+  --text-dark-color: #333333; /* Dark Gray for readability */
+  --link-hover-color: #f39c12; /* Orange-Yellow */
+  --footer-border-color: rgba(255, 255, 255, 0.2); /* Subtle border */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--primary-bg-color);
+  color: var(--text-light-color);
+  font-family: 'Poppins', sans-serif;
+  padding: 4rem 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Top Section (3-column layout) */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-section ul li a {
+  color: var(--text-light-color);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--link-hover-color);
+  transform: translateX(5px);
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: var(--text-light-color);
+  margin-right: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+/* Contact Section Links Color Fix */
+.footer-section.contact a {
+  color: #f1f1f1; /* Light gray color for contact links for better contrast */
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section.contact a:hover {
+  color: var(--accent-color); /* Accent color (gold) for hover effect */
+  transform: translateX(5px); /* Slight movement effect on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 1px solid var(--footer-border-color);
+  padding-top: 1.2rem;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  color: var(--text-light-color);
+  margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr; /* Stack sections on small screens */
+  }
+
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons a {
+    font-size: 1.6rem;
+  }
+}

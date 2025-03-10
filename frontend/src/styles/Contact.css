@@ -1,0 +1,252 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f3f3f3, #fefefe);
+    color: #333333;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    color: #333333;
+    text-align: center;
+  }
+  
+  /* Header and Subtext */
+  .contact-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e1e2d;
+    margin-bottom: 15px;
+  }
+  
+  .contact-subtext {
+    font-size: 1.1rem;
+    color: #606060;
+    margin-bottom: 30px;
+  }
+  
+  /* Success Message */
+  .contact-success-message {
+    text-align: center;
+    color: #1d8348;
+    font-size: 1rem;
+    background: #eaf8e9;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #b6e5bb;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .contact-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-label {
+    font-size: 1rem;
+    color: #4b4b4b;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .contact-input,
+  .contact-select,
+  .contact-textarea {
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fdfdfd;
+  }
+  
+  .contact-input:focus,
+  .contact-select:focus,
+  .contact-textarea:focus {
+    border-color: #5b8dee;
+    box-shadow: 0 0 5px rgba(91, 141, 238, 0.4);
+  }
+  
+  .contact-textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  /* Buttons Styling */
+  .contact-submit-button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #5b8dee;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-submit-button:hover {
+    background-color: #4a79d7;
+  }
+  
+  .contact-feature-button {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #ff7043;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .contact-feature-button:hover {
+    background-color: #e9653a;
+  }
+  
+  /* Features Section */
+  .contact-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+  }
+  
+  .contact-feature-button-container {
+    flex: 1 1 calc(33% - 15px);
+    text-align: center;
+  }
+  
+  /* FAQ Section */
+  .contact-faq {
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+  }
+  
+  .contact-faq-header {
+    font-size: 1.8rem;
+    color: #1e1e2d;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .contact-faq-item {
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-faq-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .contact-faq-question {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4b4b4b;
+  }
+  
+  .contact-faq-answer {
+    font-size: 1rem;
+    color: #666666;
+    margin-top: 10px;
+  }
+  
+  /* Chat Modal */
+  .contact-chat-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+  }
+  
+  .contact-chat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-chat-content h2 {
+    font-size: 1.8rem;
+    color: #1e1e2d;
+    font-weight: 600;
+  }
+  
+  .contact-chat-close {
+    align-self: flex-end;
+    font-size: 1rem;
+    background: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-chat-close:hover {
+    background: #d63b2c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    .contact-header {
+      font-size: 2rem;
+    }
+  
+    .contact-faq-header {
+      font-size: 1.5rem;
+    }
+  
+    .contact-feature-button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    .contact-features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-feature-button-container {
+      flex: 1 1 100%;
+      margin-bottom: 15px;
+    }
+  }
+  
