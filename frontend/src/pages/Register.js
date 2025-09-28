@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+// import { useAuth } from '../contexts/AuthContext';
 import PropTypes from 'prop-types';
 import '../styles/Register.css';
 import axios from 'axios';
@@ -14,23 +14,24 @@ import {
   faSpinner,
   faExclamationTriangle,
   faCheckCircle,
-  faTimes,
   faUser,
   faPalette,
   faArrowLeft,
   faCalendarAlt,
   faVenusMars
 } from '@fortawesome/free-solid-svg-icons';
-import {
-  faGoogle,
-  faFacebook,
-  faTwitter,
-  faApple
-} from '@fortawesome/free-brands-svg-icons';
+// import {
+//   faGoogle,
+//   faFacebook,
+//   faTwitter,
+//   faApple
+// } from '@fortawesome/free-brands-svg-icons';
 
 // Animation libraries
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, 
+  // AnimatePresence
+ } from 'framer-motion';
 
 // Date picker
 import DatePicker from 'react-datepicker';
@@ -65,7 +66,7 @@ const Register = () => {
   const confirmPasswordRef = useRef(null);
 
   // Hooks
-  const { register } = useAuth();
+  // const { register } = useAuth();
   const navigate = useNavigate();
 
   // Effects

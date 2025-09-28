@@ -15,16 +15,17 @@ import {
   faExclamationTriangle,
   faCheckCircle,
   faTimes,
-  faUser,
+  // faUser,
   faPalette,
   faArrowLeft
 } from '@fortawesome/free-solid-svg-icons';
-import {
-  faGoogle,
-  faFacebook,
-  faTwitter,
-  faApple
-} from '@fortawesome/free-brands-svg-icons';
+// import {
+//   faGoogle,
+//   faFacebook,
+//   faTwitter,
+//   faApple
+// } from '@fortawesome/free-brands-svg-icons';
+
 
 // Animation libraries
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -163,7 +164,7 @@ const Login = ({setIsSignedIn}) => {
       const response = await axios.post('http://localhost:3001/login',{
         formData
       })
-      if( response.data.message=='success'){
+      if( response.data.message ==='success'){
         setIsSignedIn(response.data.isArtist)
         navigate('/')
       }
